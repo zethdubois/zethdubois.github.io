@@ -1,0 +1,71 @@
+input {
+  display: none;
+}
+
+.radio {
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	margin: 10px 10px 0 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Lato';
+	text-decoration: none;
+	font-size: 14px;
+	color: #000;
+	font-weight: 900;
+	cursor: pointer;
+	border: 2px solid #000;
+	border-radius: 50%;
+	display: inline-block;
+  transition: background-color .4s;
+}
+
+.radio:hover {
+  background-color: #727272;
+}
+
+input:checked ~ .radio {
+	color: #FFF;
+	background-color: #000;
+  opacity: 1;
+}
+
+.img-box {
+  width: 715px;
+  height: 500px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#one, #two, #three, #four {
+  opacity: 0;
+  -webkit-transform: translate(0,30px);
+  transition-property: -webkit-transform, opacity;
+  transition-duration: .5s;
+  position: absolute;
+}
+
+#img-1:checked ~ .img-box #one,
+#img-2:checked ~ .img-box #two,
+#img-3:checked ~ .img-box #three,
+#img-4:checked ~ .img-box #four,
+#img-4:checked ~ .img-box #five {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+}
+
+#img-1:checked ~ .nav label #dot-1.radio,
+#img-2:checked ~ .nav label #dot-2.radio,
+#img-3:checked ~ .nav label #dot-3.radio, 
+#img-4:checked ~ .nav label #dot-4.radio,
+#img-5:checked ~ .nav label #dot-5.radio {
+  color: #FFF;
+  background-color: #000;
+}
+
+.nav {
+  width: 200px;
+  margin: 0 auto;
+}
