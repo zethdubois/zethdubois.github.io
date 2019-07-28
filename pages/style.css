@@ -1,0 +1,141 @@
+*,*:before,*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  background: #eee;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+	cursor: pointer;
+	outline: none;
+}
+
+.slider {
+	height: 500px;
+	width: 100%;
+  max-width: 960px;
+	padding: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.slides {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.slides li {
+	text-decoration: none;
+	list-style-type: none;
+  color: #fff;
+	padding: 1rem 3rem;
+	margin: 0;
+	height: 100%;
+	position: absolute;
+	display: none;
+	transition: transform 500ms ease;
+}
+
+.slides li:nth-child(even) {
+	background: linear-gradient(to bottom right,#d46,#75b);
+}
+
+.slides li:nth-child(odd) {
+	background: linear-gradient(to bottom right,#46d,#4ba);
+}
+
+li.prev-slide, li.active-slide, li.next-slide {
+	display: block;
+	top: 0;
+}
+
+li.prev-slide {
+	//left: -100%;
+  transform: translateX(-100%);
+}
+
+li.active-slide {
+	left: 0;
+}
+
+li.next-slide {
+	//left: 100%;
+  transform: translateX(100%);
+}
+
+.slider > button {
+	position: absolute;
+	top: 0;//calc(50% - 1.75rem);
+	border: none;
+	padding: 0 1rem;
+  font-size: 2rem;
+  height: 100%;
+  line-height: 100%;
+	color: #fff;
+	background: rgba(0,0,0,0);
+	transition: 200ms ease;
+}
+
+.slider > button:hover {
+  background: rgba(0,0,0,0.25);
+}
+
+.slider > button:first-of-type {
+	left: 0;
+}
+
+.slider > button:last-of-type {
+	right: 0;
+}
+
+.beads {
+	position: absolute;
+	bottom: 1.5rem;
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 10px;
+	padding: 0;
+	margin: 0;
+}
+
+.beads li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	margin: 0 0.5rem;
+	text-align: center;
+}
+
+.beads li button {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	border: none;
+	padding: 0;
+	margin: 0 auto;
+	transition: 300ms ease;
+	vertical-align: middle;
+	opacity: 0.4;
+}
+
+.beads li.active button {
+	border-radius: 5px;
+	opacity: 1;
+}
