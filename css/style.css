@@ -1,17 +1,77 @@
+div.moon {
+  margin-bottom: 0px;
+  vertical-align: top;
+  margin-top: 0px;
+margin-bottom: 0px;
+vertical-align: top;
+line-height:0px;
+}
+
+div.tree{
+
+  background: rgba(135,206,250, .2);
+  
+  top:0;
+  bottom: 0;
+  left: 10;
+  right: 10;
+    
+  
+}
+
+div.tool{
+
+
+margin-bottom: 0px;
+vertical-align: top;
+line-height:10px;
+
+}
+
+
+p.tool {
+  margin-top: -1em; 
+  margin-bottom: -1em;
+  margin-left: 22px;
+  color: #aaa;
+  font-size: 7px;
+  font-weight: 200;
+
+
+}
+
+
+hr {
+  display: block;
+
+margin-top:0px;
+
+  margin-right: auto;
+
+  border-width: 10px;
+}
+img{
+    max-width:100px;
+    height:auto;
+}
+b {
+  margin: 22px;
+}
 body {
   background: #eee;
   font-family: "Abel" , "Lucida Sans";
   line-height: 30px;
+  margin: 0px;
+  vertical-align: top;margin-top: 0px;
 }
 
 h2 {
   color: #aa;
   font-size: 30px;
-  line-height: 18px;
-  font-style: ;
+  margin: 20px;
+
   font-weight: bold;
-  margin: 18px;
-  text-align: left;
+
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
 }
 h3 {
@@ -20,20 +80,12 @@ h3 {
   line-height: 10px;
   font-style: ;
   font-weight: 200;
-  margin: 18px;
+  margin: 20px;
   text-align: left;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
 }
-h4 {
-  color: #aaa;
-  font-size: 7px;
-  line-height: 0px;
-  font-style: ;
-  font-weight: 200;
-  margin: 22px;
-  text-align: left;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
-}
+
+
 
 .SubLi{
   cursor: pointer;
@@ -48,8 +100,8 @@ h4 {
   overflow: hidden;
   
   -webkit-transition: max-height 0.3s ease;
-	-moz-transition: max-height 0.3s ease;
-	transition: max-height 0.3s ease;
+  -moz-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
 }
 
 .SubLi.opened:before{
@@ -60,8 +112,8 @@ h4 {
   overflow: visible;
   
   -webkit-transition: max-height 0.8s ease;
-	-moz-transition: max-height 0.8s ease;
-	transition: max-height 0.8s ease;
+  -moz-transition: max-height 0.8s ease;
+  transition: max-height 0.8s ease;
 }
 
 .SubNill{
