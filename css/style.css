@@ -61,10 +61,7 @@ margin-top:0px;
 
   border-width: 10px;
 }
-img{
-    max-width:100px;
-    height:auto;
-}
+
 b {
   margin: 22px;
 }
@@ -96,6 +93,16 @@ h3 {
   margin: 20px;
   text-align: left;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+p.blurb {
+  color: #aa;
+  font-size: 14px;
+  font-style: ;
+  font-weight: 200;
+  margin: 60px;
+  text-align: justify;
+
 }
 
 
