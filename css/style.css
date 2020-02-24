@@ -62,9 +62,7 @@ margin-top:0px;
   border-width: 10px;
 }
 
-b {
-  margin: 22px;
-}
+
 body {
   font-family: 'abelregular', Arial, sans-serif;
 
@@ -86,7 +84,7 @@ h2 {
 }
 h3 {
   color: #aa;
-  font-size: 18px;
+  font-size: 15px;
 
   font-style: ;
   font-weight: 200;
@@ -95,6 +93,9 @@ h3 {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
 }
 
+li{
+  font-size: 13px;
+}
 .SubLi{
   cursor: pointer;
   list-style-type: none;
