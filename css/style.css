@@ -75,7 +75,7 @@ body {
 
 h2 {
   color: #aa;
-  font-size: 40px;
+  font-size: 30px;
   margin: 20px;
 
   font-weight: bold;
@@ -83,8 +83,8 @@ h2 {
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
 }
 h3 {
-  color: #aa;
-  font-size: 15px;
+  color: #1a1a1a;
+  font-size: 16px;
 
   font-style: ;
   font-weight: 200;
