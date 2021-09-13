@@ -1,0 +1,170 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+#ajerez {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 9999;
+}
+#ajerez img {
+  box-sizing: border-box;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #7482A5;
+  transition: border-radius 0.2s ease-in-out;
+}
+#ajerez img:hover {
+  border-radius: 30%;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #EE983E;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-paperplane {
+  font-size: 1em;
+  color: white;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+
+.psych {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.psych span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.psych:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.psych:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.psych:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.psych:before, .psych:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.psych:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.psych:after {
+  content: "Engineering Psychology";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+.thesis {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.thesis span {
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.thesis:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.thesis:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.thesis:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.thesis:before, .thesis:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 174px;
+  height: 25px;
+}
+.thesis:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.thesis:after {
+  content: "architecture Master thesis";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}

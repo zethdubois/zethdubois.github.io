@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+
+
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #1F3944;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-paperplane {
+  font-size: 1em;
+  color: white;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+
+.contact-button {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.contact-button span {
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 30px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.contact-button:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.contact-button:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.contact-button:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.contact-button:before, .contact-button:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 148px;
+  height: 25px;
+}
+.contact-button:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.contact-button:after {
+  content: "blockchain everything";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+.inspiration {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #47829c;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.psych {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.psych span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.psych:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.psych:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.psych:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.psych:before, .psych:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.psych:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.psych:after {
+  content: "Engineering Psychology";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+.thesis {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.thesis span {
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.thesis:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.thesis:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.thesis:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.thesis:before, .thesis:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 174px;
+  height: 25px;
+}
+.thesis:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.thesis:after {
+  content: "architecture Master thesis";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
