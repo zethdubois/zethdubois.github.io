@@ -51,7 +51,7 @@ html {
   position: absolute;
   color: #EE983E;
   top: 20px;
-  left: 30px;
+  left: 60px;
   opacity: 0;
   transition: all 0s ease 0s;
 }
@@ -84,7 +84,7 @@ html {
   transition: 0.3s ease-in-out;
 }
 .contact-button:after {
-  content: "blockchain everything";
+  content: "meldesich @ pm.me";
   font-size: 0.45em;
   top: -7px;
   left: 0px;
