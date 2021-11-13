@@ -105,7 +105,7 @@ html {
   font-size: 1em;
 }
 
-.psych {
+.hf {
   position: relative;
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
@@ -121,7 +121,7 @@ html {
   padding: 20px 60px 20px 55px;
   transition: 0.3s ease-in-out;
 }
-.psych span {
+.hf span {
   text-align: right;
   text-transform: none;
   position: absolute;
@@ -131,21 +131,21 @@ html {
   opacity: 0;
   transition: all 0s ease 0s;
 }
-.psych:hover {
+.hf:hover {
   transition: 0.3s ease-in-out;
   border: 2px solid white;
   border-radius: 50px;
   background-color: white;
 }
-.psych:hover > span {
+.hf:hover > span {
   opacity: 1;
   transition: all 0.25s ease-in-out 0.1s;
 }
-.psych:hover:before {
+.hf:hover:before {
   transition: 0.3s ease-in-out;
   background-color: #EE983E;
 }
-.psych:before, .psych:after {
+.hf:before, .hf:after {
   content: "";
   position: absolute;
   top: -14px;
@@ -153,21 +153,20 @@ html {
   width: 152px;
   height: 25px;
 }
-.psych:before {
+.hf:before {
   border: 2px solid #EE983E;
   background-color: #1F3944;
   transform: skew(-25deg);
   transition: 0.3s ease-in-out;
 }
-.psych:after {
-  content: "Engineering Psychology";
+.hf:after {
+  content: "University of Idaho";
   font-size: 0.45em;
   top: -7px;
   left: 0px;
   color: white;
 }
-
-.neuro {
+.hf1 {
   position: relative;
   -webkit-perspective: 1000;
   -webkit-backface-visibility: hidden;
@@ -183,7 +182,7 @@ html {
   padding: 20px 60px 20px 55px;
   transition: 0.3s ease-in-out;
 }
-.neuro span {
+.hf1 span {
   text-align: right;
   text-transform: none;
   position: absolute;
@@ -193,21 +192,83 @@ html {
   opacity: 0;
   transition: all 0s ease 0s;
 }
-.neuro:hover {
+.hf1:hover {
   transition: 0.3s ease-in-out;
   border: 2px solid white;
   border-radius: 50px;
   background-color: white;
 }
-.neuro:hover > span {
+.hf1:hover > span {
   opacity: 1;
   transition: all 0.25s ease-in-out 0.1s;
 }
-.neuro:hover:before {
+.hf1:hover:before {
   transition: 0.3s ease-in-out;
   background-color: #EE983E;
 }
-.neuro:before, .neuro:after {
+.hf1:before, .hf1:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.hf1:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.hf1:after {
+  content: "Engineering Psychology";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+.hf2 {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.hf2 span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.hf2:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.hf2:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.hf2:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.hf2:before, .hf2:after {
   content: "";
   position: absolute;
   top: -14px;
@@ -215,14 +276,14 @@ html {
   width: 180px;
   height: 25px;
 }
-.neuro:before {
+.hf2:before {
   border: 2px solid #EE983E;
   background-color: #1F3944;
   transform: skew(-25deg);
   transition: 0.3s ease-in-out;
 }
-.neuro:after {
-  content: "Cognitive Neuropsychology";
+.hf2:after {
+  content: "Cognitive Neuroscience";
   font-size: 0.45em;
   top: -7px;
   left: 0px;
@@ -284,6 +345,195 @@ html {
 }
 .thesis:after {
   content: "architecture Master thesis";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+.decen {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.decen span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.decen:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.decen:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.decen:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.decen:before, .decen:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.decen:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.decen:after {
+  content: "Economic Philosophy";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+
+
+.d1 {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.d1 span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.d1:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.d1:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.d1:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.d1:before, .d1:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.d1:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.d1:after {
+  content: "Philosophical Overview";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+
+.d2 {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.d2 span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.d2:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.d2:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.d2:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.d2:before, .d2:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.d2:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.d2:after {
+  content: "Technical Overview";
   font-size: 0.45em;
   top: -7px;
   left: 0px;
