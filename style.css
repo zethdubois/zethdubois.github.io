@@ -411,8 +411,133 @@ html {
   top: -7px;
   left: 0px;
   color: white;
+
 }
 
+.dev {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.dev span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.dev:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.dev:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.dev:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.dev:before, .dev:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.dev:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.dev:after {
+  content: "Tools / Experiments";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+
+.dev1 {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.dev1 span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.dev1:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.dev1:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.dev1:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.dev1:before, .dev1:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.dev1:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.dev1:after {
+  content: "PGP with Python";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
 
 
 .d1 {
