@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Z.DUBOIS</title>
+  <style>
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+
+
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #1F3944;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-paperplane {
+  font-size: 1em;
+  color: white;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+
+.contact-button {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.contact-button span {
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.contact-button:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.contact-button:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.contact-button:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.contact-button:before, .contact-button:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 148px;
+  height: 25px;
+}
+.contact-button:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.contact-button:after {
+  content: "meldesich @ pm.me";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+.inspiration {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #47829c;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.hf {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.hf span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.hf:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.hf:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.hf:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.hf:before, .hf:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.hf:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.hf:after {
+  content: "University of Idaho";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+.hf1 {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.hf1 span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.hf1:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.hf1:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.hf1:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.hf1:before, .hf1:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.hf1:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.hf1:after {
+  content: "Engineering Psychology";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+.hf2 {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.hf2 span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.hf2:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.hf2:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.hf2:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.hf2:before, .hf2:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 180px;
+  height: 25px;
+}
+.hf2:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.hf2:after {
+  content: "Cognitive Neuroscience";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+.thesis {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.thesis span {
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.thesis:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.thesis:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.thesis:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.thesis:before, .thesis:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 174px;
+  height: 25px;
+}
+.thesis:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.thesis:after {
+  content: "architecture Master thesis";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+.decen {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.decen span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.decen:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.decen:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.decen:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.decen:before, .decen:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.decen:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.decen:after {
+  content: "Economic Philosophy";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+
+}
+
+.dev {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.dev span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.dev:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.dev:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.dev:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.dev:before, .dev:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.dev:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.dev:after {
+  content: "Tools / Experiments";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+
+.dev1 {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.dev1 span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.dev1:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.dev1:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.dev1:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.dev1:before, .dev1:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.dev1:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.dev1:after {
+  content: "PGP with Python";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+
+.d1 {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.d1 span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.d1:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.d1:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.d1:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.d1:before, .d1:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.d1:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.d1:after {
+  content: "Philosophical Overview";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+
+.d2 {
+  position: relative;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  border: 2px solid white;
+  border-radius: 4px;
+  padding: 20px 60px 20px 55px;
+  transition: 0.3s ease-in-out;
+}
+.d2 span {
+  text-align: right;
+  text-transform: none;
+  position: absolute;
+  color: #EE983E;
+  top: 20px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+.d2:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: white;
+}
+.d2:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+}
+.d2:hover:before {
+  transition: 0.3s ease-in-out;
+  background-color: #EE983E;
+}
+.d2:before, .d2:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 152px;
+  height: 25px;
+}
+.d2:before {
+  border: 2px solid #EE983E;
+  background-color: #1F3944;
+  transform: skew(-25deg);
+  transition: 0.3s ease-in-out;
+}
+.d2:after {
+  content: "Technical Overview";
+  font-size: 0.45em;
+  top: -7px;
+  left: 0px;
+  color: white;
+}
+
+</style>
+
+</head>
+<body>
+
+
+<a href="items.html" target="" class="contact-button">
+    PAGES OF Z DUBOIS 
+    <span>SEE MORE</span>
+</a>
+<!-- partial -->
+  
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Augmented Storytelling</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vSm9fk0bx9frOm_2zwrDDclIFMzmglD6aQ0wlMbwzbSCt64UoCR04f8wpW0XT1dhxSRHzxxlGmZswIL/pub?embedded=true" style="width:100%;height:100%;position: fixed;"></iframe>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Decentralize To Maximize Joy</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<a href="https://vimeo.com/manage/videos/645572870" target="_blank" class="d1">Bitcoin Is Exceptional Money<span> - 11 minutes on VIMEO </span></a><P><br><br>
+<a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4" target="_blank" class="d2">How Does Cryptocurreny Work?<span> - 26 minutes on YouTube</span></a><P><br><br>
+<!-- partial -->
+  
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Items</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<a href="pages/pgpy-trix.py" class="dev1">PGP Messaging<span> - web app</span></a><P><br><br>
+
+
+  
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ABSTRACT: Ecstatic [X]Reality</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+<img src="img/cover_art.png" width="100%">
+<p class="blurb">
+<b>Ecstatic [X]Reality: Mediating Altered States of Consciousness</b><br><br>
+Abstract<br><br>
+The practice of ecstatic ritual is as ancient as human culture. With the rise of organized religion and the rational scientific revolutions, knowledge of practices and techniques faded into myth. Ecstasy can be described as a highly charged emotional state, at once volatile and deeply significant, presenting the conscious mind with inexplicable mental visions. Contemporary Western culture eschews the value of ecstatic ritual, in favor of rational problem-solving. The ecstatic experience is personal, unfathomable, and the only detailed signs of its passage are in the accounts of subjects relating their experiences. The ephemeral subjectivity of ecstasy presentsnumerous barriers for the formal investigation of the transformation of consciousness, in both scientific credo and societal acceptance.
+
+<br><br>
+A person may use non-invasive mental techniques of meditation, prayer, trance, and the like, to achieve an ecstatic state of mind. Ingesting psychoactive compounds can also lead to ecstasy. Until the 20th century, these processes have been primarily held to be the domain of spiritual exploration. With parallel advances of both inorganic and organic chemistry, scientists discovered psychoactive chemicals inherent in plants reacted in the brain in unforeseen ways. Further exploration of natural compounds and fully human-made laboratory chemicals revealed the existence of neurotransmitters, demonstrating that the experience of consciousness can be directed by temporarily altering brain neurochemistry.
+<br><br>
+The ecstatic experience relates to a state of perception of self in a world of sensation. It is conceivable that that deviation from ordinary frames of reference, as shown by the recordings in the stories of shamans, religious practitioners, yogis, and scientific experimentation, is central to the benefits inherited from an altered state of mind. Evidence has shown that ecstatic ritual well-conceived can have lasting therapeutic effects for mood disorders, assist in overcoming chemical addictions, and enhance overall peace of mind.
+<br><br>
+Accepting that ecstasy is a personal voyage wherein the individual reimagines itself in analtered world, is it also possible to direct the development of strictly external sensations to assistin the development of similar outcomes? This paper will explore the use of Cross Reality(XR) to craft uniquely adapted ecstatic experiences. Accessing ecstasy with Ecstatic Cross Reality(EXR) offers hitherto unreachable features of altered state consciousness. Chief among them is the opportunity to be observed by third parties—which is to say, empirical, and to some degree, reproducible. EXR can be simultaneously a door to spiritual discovery, and a research tool into the workings of the conscious mind.
+<br><br>
+<b>Master Thesis</b> <a href="exr2.html">browser iframe PDF</a>
+</p>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ecstatic [X]Reality</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<iframe src="https://drive.google.com/file/d/112ILUd_DsVCvmESLX7h4C4N0VduNkhGA/preview" style="width:100%;height:100%;position: fixed;"></iframe>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HF Projects</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<a href="pages/sdt.html" class="hf1">Signal Detection Theory<span> - view pages</span></a><P><br><br>
+<a href="pages/iq2.html" class="hf2">Intuition Quotient - IQ2<span> - view pages</span></a><br><br>
+<a href="items.html">cd ..</a>
+  
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Interests</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<a href="dev.html" class="dev">project tools!<span> - view projects</span></a><P><br><br>
+<a href="decen.html" class="decen">Decentralize<span> - view pages</span></a><P><br><br>
+<a href="hf.html" class="hf">Human Factors<span> - view pages</span></a><P><br><br>
+<a href="exr.html" class="thesis"> Ecstatic [X] Reality<span> - Thesis Document</span></a>
+<!-- partial -->
+  
+</body>
+</html>
