@@ -1,19 +1,85 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Z.DUBOIS</title>
-  <link rel="stylesheet" href="./style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <style>
+        .frame {
+            float: right;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            width: 30%;
+        }
+    </style>
 </head>
 <body>
+    <!-- Organization Frame -->
+    <div class="frame" vocab="http://schema.org/" typeof="Organization">
+        <h3 property="name">Society for Creative Anachronisms</h3>
+        <p>Location: <span property="location">Westeros County</span></p>
+        <p>Description: <span property="description">A global organization dedicated to researching and re-creating the arts and skills of pre-17th-century Europe.</span></p>
+        <p>Role: <span property="memberOf">Treasurer</span></p>
+        <p>Website: <a property="url" href="https://www.sca.org/">https://www.sca.org/</a></p>
+    </div>
 
+    <!-- Event Frame -->
+    <div class="frame" vocab="http://schema.org/" typeof="Event">
+        <h3 property="name">Science Symposium 2023</h3>
+        <p>Date: <span property="startDate">2023-06-15</span> to <span property="endDate">2023-06-18</span></p>
+        <p>Location: <span property="location">ABC Convention Center, New York</span></p>
+        <p>Description: <span property="description">A symposium bringing together the brightest minds in science to discuss recent advancements and breakthroughs.</span></p>
+        <p>Executive Producer: John Doe</p>
+    </div>
 
-<a href="items.html" target="" class="contact-button">
-    PAGES OF Z DUBOIS 
-    <span>SEE MORE</span>
-</a>
-<!-- partial -->
-  
+    <!-- Main Content -->
+    <div vocab="http://schema.org/" typeof="Person">
+        <h1 property="name">John Doe</h1>
+        <img property="image" src="img/johndoe.png" alt="John Doe's Picture" />
+
+        <!-- Personal Details -->
+        <h2>Personal Details</h2>
+        <p>Gender: <span property="gender">Male</span></p>
+        <p>Birthplace: <span property="birthPlace">Springfield</span></p>
+        <p>Nationality: <span property="nationality">American</span></p>
+        <p>Children: <span property="children">Jane Doe, James Doe</span></p>
+
+        <!-- Contact Information -->
+        <h2>Contact Information</h2>
+        <p>Email: <a property="email" href="mailto:johndoe@example.com">johndoe@example.com</a></p>
+        <p>Phone: <span property="telephone">+1-123-456-7890</span></p>
+        
+        <!-- Address -->
+        <div property="address" typeof="PostalAddress">
+            <p>Address:</p>
+            <p><span property="streetAddress">123 Main St</span></p>
+            <p><span property="addressLocality">Anytown</span>, <span property="addressRegion">CA</span> <span property="postalCode">12345</span></p>
+        </div>
+
+        <!-- Professional Details -->
+        <h2>Professional Details</h2>
+        <p>Job Title: <span property="jobTitle">Research Scientist</span></p>
+        <div property="affiliation" typeof="Organization">
+            <p>Affiliations:</p>
+            <ul>
+                <li><span property="name">ABC University</span></li>
+                <li><span property="name">Society for Creative Anachronisms</span> - Treasurer of Westeros County</li>
+            </ul>
+        </div>
+        <p>Member Of: <span property="memberOf">National Science Association</span>, <span property="memberOf">Society for Creative Anachronisms (Treasurer of Westeros County)</span></p>
+        <p>Follows: <span property="follows">Dr. Emily Smith, Prof. Robert Brown</span></p>
+
+        <!-- Education and Experience -->
+        <h2>Education and Experience</h2>
+        <ul>
+            <li property="alumniOf" typeof="EducationalOrganization">
+                <span property="name">XYZ University</span> - PhD in Physics
+            </li>
+            <li>Researcher at <span property="worksFor" typeof="Organization"><span property="name">DEF Institute</span></span> for 5 years</li>
+        </ul>
+    </div>
 </body>
 </html>
